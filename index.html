@@ -37,7 +37,7 @@
 
 				<div class="box alt container">
 					<section class="feature left">
-						<a className="craftsy-image" href="https://craftsy-etsy-clone.herokuapp.com/" target="_blank" class="image icon fa-signal"><img src="https://raw.githubusercontent.com/mochimaster/Etsyc/master/images/signup.png" alt="" /></a>
+						<a className="craftsy-image project-img" href="https://craftsy-etsy-clone.herokuapp.com/" target="_blank" class="image icon fa-signal"><img src="https://raw.githubusercontent.com/mochimaster/Etsyc/master/images/signup.png" alt="" /></a>
 						<div class="content">
 							<h3>Atsy</h3>
 							<p>Atsy is an ecommerce website for crafts that is inspired by Etsy. It is built on Ruby on Rails and PostgreSQL backend with React
@@ -45,7 +45,7 @@
 						</div>
 					</section>
 					<section class="feature right">
-						<a href="http://www.fly-to.wiki/" target="_blank" class="image icon fa-code"><img src="./images/Fly-To.png" alt="" /></a>
+						<a className="fly-to-image project-img" href="http://www.fly-to.wiki/" target="_blank" class="image icon fa-code"><img src="./images/Fly-To.png" alt="" /></a>
 						<div class="content">
 							<h3>Fly-To</h3>
 							<p>Fly-To is a budget-oriented flight search engine. You can view the world in four different styles (including a halloween
@@ -53,7 +53,7 @@
 						</div>
 					</section>
 					<section class="feature left">
-						<a href="https://mochimaster.github.io/RetroSnake/" target="_blank" class="image icon fa-mobile"><img src="./images/RetroSnake.png" alt="" /></a>
+						<a className="retrosnake-image project-img" href="https://mochimaster.github.io/RetroSnake/" target="_blank" class="image icon fa-mobile"><img src="./images/RetroSnake.png" alt="" /></a>
 						<div class="content">
 							<h3>RetroSnake</h3>
 							<p>RetroSnake is a throwback to the snake game I used to play on a Nokia 3310 when I was a kid. RetroSnake mimics the
@@ -206,7 +206,7 @@
 				-->
 
 				<footer class="major container medium">
-					<h3>Get shady with science</h3>
+					<h3>Technologies</h3>
 					<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
 					<ul class="actions special">
 						<li><a href="#" class="button">Join our crew</a></li>
@@ -220,13 +220,14 @@
 				<div class="container medium">
 
 					<header class="major last">
-						<h2>Questions or comments?</h2>
+						<h2>Contact</h2>
 					</header>
 
-					<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor
-					orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
+					<p>Kee Ngiam</p>
+					<div>Email: keejuan05@gmail.com</div>
+					<div>Phone: 510-936-1639</div>
 
-					<form method="post" action="#">
+					<!-- <form method="post" action="#">
 						<div class="row">
 							<div class="col-6 col-12-mobilep">
 								<input type="text" name="name" placeholder="Name" />
@@ -243,18 +244,46 @@
 								</ul>
 							</div>
 						</div>
+					</form> -->
+
+					<form name="contact" method="POST" netlify>
+						<div class="row">
+							<div class="col-6 col-12-mobilep">
+								<input type="text" name="name" placeholder="Name"/>
+							</div>
+							<div class="col-6 col-12-mobilep">
+								<input type="email" name="email" placeholder="Email"/>
+							</div>
+							<!-- <p>
+								<label>Your Role: <select name="role[]" multiple>
+										<option value="leader">Leader</option>
+										<option value="follower">Follower</option>
+									</select></label>
+							</p> -->
+							<div class="col-12">
+								<textarea name="message" placeholder="Message" rows="6"></textarea>
+							</div>
+							<div class="col-12">
+								<ul class="actions special">
+									<!-- <li><button type="submit">Send Message</button></li> -->
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</div>
+
+						</div>
 					</form>
 
 					<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<!-- <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li> -->
+						<!-- <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
+						<!-- <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li> -->
+						<li><a href="https://github.com/mochimaster" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/kee-juan-ngiam-5304424b/" target="_blank" class="icon fa-linkedin"><span class="label"></span></a></li>
+						<!-- <li><a href="#" target="" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li> -->
 					</ul>
 
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 
 				</div>
