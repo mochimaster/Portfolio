@@ -31,3 +31,8 @@ img{
     max-height:100%;
     vertical-align: middle;
 }
+
+.skills-container{
+    display: grid;
+
+}
