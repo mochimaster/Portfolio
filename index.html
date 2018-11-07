@@ -10,6 +10,15 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			$("#button").click(function () {
+					$('html,body').animate({
+						scrollBottom: $("#contact-info'").offset().top
+					},'slow');
+				});
+		</script> -->
 	</head>
 	<body class="is-preload">
 
@@ -18,17 +27,24 @@
 				<img src='./images/avatar.png' />
 				<h1>Hi, I'm Kee.</h1>
 				<p>I build stuff in San Francisco!</p>
+				<!-- <input id="button" type="button" onClick="document.getElementById('contact-info').scrollIntoView();" /> -->
+				<!-- <input id="button" type="button" onClick="smoothScroll(document.getElementById('contact-info'))" /> -->
+				<!-- <input id="button" type="button" /> -->
 			</div>
+
 
 		<!-- Main -->
 			<div id="main">
-
 				<header class="major container medium">
-					<h2>We conduct experiments that
-					<br />
-					may or may not seriously
-					<br />
-					break the universe</h2>
+					<h2>My Story</h2>
+					<p id="story">I'm a Software Automation QA turned Software Developer. By studying and self-development, I was able to develop multiple 
+						full stack applications using Ruby on Rails and MERN (MongoDB, Express, React, Node.js) stack.
+					</p>
+
+					<ul class="actions special resume-button">
+						<li><a target="_blank" href="https://docs.google.com/document/d/1pd0DJd35kMFBqFjcc1BlCL0pykK_eA9f6y_YK1J0c7s/edit?usp=sharing"
+								class="button">Resume</a></li>
+					</ul>
 					<!--
 					<p>Tellus erat mauris ipsum fermentum<br />
 					etiam vivamus nunc nibh morbi.</p>
@@ -37,7 +53,8 @@
 
 				<div class="box alt container">
 					<section class="feature left">
-						<a className="craftsy-image project-img" href="https://craftsy-etsy-clone.herokuapp.com/" target="_blank" class="image icon fa-signal"><img src="https://raw.githubusercontent.com/mochimaster/Etsyc/master/images/signup.png" alt="" /></a>
+						<!-- <a className="craftsy-image project-img" href="https://craftsy-etsy-clone.herokuapp.com/" target="_blank" class="image icon fa-signal"><img src="https://raw.githubusercontent.com/mochimaster/Etsyc/master/images/signup.png" alt="" /></a> -->
+						<a className="craftsy-image project-img" href="https://craftsy-etsy-clone.herokuapp.com/" target="_blank" class="image icon fa-gift"><img src="https://raw.githubusercontent.com/mochimaster/Etsyc/master/images/signup.png" alt="" /></a>
 						<div class="content">
 							<h3>Atsy</h3>
 							<p>Atsy is an ecommerce website for crafts that is inspired by Etsy. It is built on Ruby on Rails and PostgreSQL backend with React
@@ -45,7 +62,8 @@
 						</div>
 					</section>
 					<section class="feature right">
-						<a className="fly-to-image project-img" href="http://www.fly-to.wiki/" target="_blank" class="image icon fa-code"><img src="./images/Fly-To.png" alt="" /></a>
+						<!-- <a className="fly-to-image project-img" href="http://www.fly-to.wiki/" target="_blank" class="image icon fa-code"><img src="./images/Fly-To.png" alt="" /></a> -->
+						<a className="fly-to-image project-img" href="http://www.fly-to.wiki/" target="_blank" class="image icon far fa-plane"><img src="./images/Fly-To.png" alt="" /></a>
 						<div class="content">
 							<h3>Fly-To</h3>
 							<p>Fly-To is a budget-oriented flight search engine. You can view the world in four different styles (including a halloween
@@ -53,7 +71,8 @@
 						</div>
 					</section>
 					<section class="feature left">
-						<a className="retrosnake-image project-img" href="https://mochimaster.github.io/RetroSnake/" target="_blank" class="image icon fa-mobile"><img src="./images/RetroSnake.png" alt="" /></a>
+						<!-- <a className="retrosnake-image project-img" href="https://mochimaster.github.io/RetroSnake/" target="_blank" class="image icon fa-mobile"><img src="./images/RetroSnake.png" alt="" /></a> -->
+						<a className="retrosnake-image project-img" href="https://mochimaster.github.io/RetroSnake/" target="_blank" class="image icon fa-gamepad"><img src="./images/RetroSnake.png" alt="" /></a>
 						<div class="content">
 							<h3>RetroSnake</h3>
 							<p>RetroSnake is a throwback to the snake game I used to play on a Nokia 3310 when I was a kid. RetroSnake mimics the
@@ -205,12 +224,33 @@
 				</div>
 				-->
 
-				<footer class="major container medium">
+				<footer class="box container skills">
+				<!-- <footer class="major container medium "> -->
 					<h3>Technologies</h3>
-					<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
-					<ul class="actions special">
-						<li><a href="#" class="button">Join our crew</a></li>
+					<!-- <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p> -->
+					<ul>
+						<li>React Icon</li>
+						<li>JavaScript Icon</li>
+						<li>Rails Icon</li>
 					</ul>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<!-- <ul class="actions special">
+						<li><a href="#" class="button">Join our crew</a></li>
+					</ul> -->
 				</footer>
 
 			</div>
@@ -219,12 +259,15 @@
 			<div id="footer">
 				<div class="container medium">
 
-					<header class="major last">
+					<header id="contact-info" class="major last">
 						<h2>Contact</h2>
 					</header>
 
-					<p>Kee Ngiam</p>
-					<div>Email: keejuan05@gmail.com</div>
+					<div>Kee Ngiam</div>
+					<div>Email:
+						<a href="mailto:keejuan05@gmail.com?Subject=Hello%20Kee" target="_top">keejuan05@gmail.com</a>
+					</div>
+					<!-- <div>Email: keejuan05@gmail.com</div> -->
 					<div>Phone: 510-936-1639</div>
 
 					<!-- <form method="post" action="#">
@@ -283,7 +326,8 @@
 					</ul>
 
 					<ul class="copyright">
-						<li>&copy; All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; All rights reserved.</li>
+						<!-- <li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
 					</ul>
 
 				</div>
