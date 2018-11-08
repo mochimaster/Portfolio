@@ -32,15 +32,28 @@ img{
     vertical-align: middle;
 }
 
-.skills-container{
+/* .skills-container{ */
+#skill1{
     display: grid;
-    grid-template-rows: 1fr
-    
-
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
 }
 
-#skills-container > .skills-row{
+/* #skills-container > .skills-row{ */
+.more.more1.more2.more3{
+/* #skill1{ */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     font-size: 20px;
+
+}
+
+.dev-icons{
+    font-size: 45px;
+}
+
+.custom-icons{
+    width:25%;
+    height: 65%;
+
 }
