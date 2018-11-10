@@ -7,16 +7,10 @@
 .resume-button{
     text-align: center;
     margin-top: 40px;
-
 }
 
 #story{
     text-transform: none;
-}
-
-#header{
-    /* background-image: url('./images/productivity.png');
-    z-index: -1; */
 }
 
 .craftsy-image.project-img{
@@ -32,20 +26,10 @@ img{
     vertical-align: middle;
 }
 
-/* .skills-container{ */
 #skill1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
-}
-
-/* #skills-container > .skills-row{ */
-.more.more1.more2.more3{
-/* #skill1{ */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    font-size: 20px;
-
 }
 
 .dev-icons{
@@ -53,15 +37,8 @@ img{
 }
 
 .custom-icons{
-    /* width:25%;
-    height: 65%; */
     width:45px;
     height: 45px;
-
-}
-
-.custom-h2{
-
 }
 
 a{
